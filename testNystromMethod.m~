@@ -1,0 +1,70 @@
+clear all;
+
+I = randn(20,20);
+
+W = zeros(400,400);
+
+sigma = 2;
+
+for i = 1:20
+    for j = 1:20
+        for k = 1:20
+            for l= 1:20
+                W((i-1)*20+j,(k-1)*20+l) = exp(-abs(I(i,j)-I(k,l))^2/sigma^2);
+            end
+        end
+    end
+end
+
+[U,S,V] = svd(W);
+finished = 1
+
+%%
+nbAff = 5;
+A = zeros(nbAff, nbAff);
+
+correspondances = [];
+for i = 1:N
+    for j = 1:N
+        correspondances = [correspondances; i,j];
+    end
+end
+
+randPixels = [];
+indexes = [];
+for i = 1:nbAff
+    ind = randi(N*N);
+   randPixels = [randPixels; correspondances(ind,:)];
+   indexes = [indexes; ind];
+end
+
+%%
+
+for i = 1:nbAff
+   pixel = randPixels(i,:);
+   for j = 1:nbAff
+       pixel2 = randPixels(j,:);
+       A(i,j) = exp(-abs(I(pixel(1),pixel(2))-I(pixel2(1),pixel2(2)))^2/sigma^2);
+   end
+end
+
+%%
+
+[N,N] = size(I);
+B = zeros((N*N)-nbAff,nbAff);
+
+for i = 1:nbAff
+    pixel = randPixels(i,:)
+    k = 0;
+    for j = 1:(N*N)-nbAff
+        pixel2 = correspondances(j,:)
+        if(sum(randPixels(:,1) == pixel2(1) .* randPixels(:,2) == pixel2(2)) == 0)
+           k = k+1;
+           B(k,i) = exp(-abs(I(pixel(1),pixel(2))-I(pixel2(1),pixel2(2)))^2/sigma^2);
+        end
+    end
+end
+
+%%
+
+S = A + A^(-1/2)*B'*B'*A^(-1/2)
