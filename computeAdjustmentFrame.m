@@ -7,34 +7,34 @@ downsampledFrame2 = permute(downsample(permute(downsample(fii,downsampleFactor),
 %%
 %%Step 1 : bilateral filtering (spatial sigma = 10% of smaller dim, range
 %%sigma = 10% of the values rnge
-disp('Bilateral filtering of images...');
+%disp('Bilateral filtering of images...');
 spatialSigma = 0.1*min(width,height);
 rangeSigma = 0.1;
 filteredFrame = bfilter2(downsampledFrame,5,[spatialSigma,rangeSigma]);
 filteredFrame2 = bfilter2(downsampledFrame2,5,[spatialSigma,rangeSigma]);
-disp('Done.');
+%disp('Done.');
 %%
 %%Step 2 : Set of correspondances
 %%Ri/i+1 = {x s.t. |(Li(x)-mu(Li))?(Li+1(x)-mu(Li+1)| < 0.05}
 %%L_{i} denote the luminance channel of the frame f_{i}
 %%mu(L_{i}) represents the mean of the luminance channel L_{i}
 
-disp('Converting RBG to Lab ...');
+%disp('Converting RBG to Lab ...');
 labFrame = RGB2Lab(filteredFrame);
 labFrame2 = RGB2Lab(filteredFrame2);
-disp('Done.');
+%disp('Done.');
 
-disp('Computing robust set of correspondances ...');
+%disp('Computing robust set of correspondances ...');
 R = abs((labFrame(:,:,1) - mean(mean(labFrame(:,:,1)))) - (labFrame2(:,:,1) - mean(mean(labFrame2(:,:,1))))) < 1.5;
 
-disp('Done.');
+%disp('Done.');
 
 %%
 %%Step 3 : Initialize adjustment map
 %%A_{i+1} = A_{i} + f_{i}(x) - f_{i+1}(x) if x in R, 0 otherwise
 
 
-disp('Computing initialisation of adjustment map');
+%disp('Computing initialisation of adjustment map');
 A_init = zeros(height,width,3);
 for i=1:height
     for j=1:width
@@ -45,22 +45,26 @@ for i=1:height
         end
     end
 end
-disp('Done.');
+%disp('Done.');
 
 
 %%
-disp('Fast interpolation using Nystrom method')
+%disp('Fast interpolation using Nystrom method')
 sigma1 = 5;
 sigma2 = 5;
 sigma3 = 5;
 
-disp('Computing SVD approximation for dimension 1...');
-[U1,D1,V1] = getNystromApproximation(labFrame(:,:,1),10,300,sigma1);
-disp('Computing SVD approximation for dimension 2...');
-[U2,D2,V2] = getNystromApproximation(labFrame(:,:,2),10,300,sigma2);
-disp('Computing SVD approximation for dimension 3...');
-[U3,D3,V3] = getNystromApproximation(labFrame(:,:,3),10,300,sigma3);
-disp('Done.');
+%disp('Computing SVD approximation for dimension 1...');
+[S1,V1] = getNystromApproximation(labFrame(:,:,1),10,300,sigma1);
+%disp('Computing SVD approximation for dimension 2...');
+[S2,V2] = getNystromApproximation(labFrame(:,:,2),10,300,sigma2);
+%disp('Computing SVD approximation for dimension 3...');
+[S3,V3] = getNystromApproximation(labFrame(:,:,3),10,300,sigma3);
+%disp('Done.');
+
+V1 = V1';
+V2 = V2';
+V3 = V3';
 
 %%
 
@@ -99,6 +103,6 @@ for d = 1:3
     end
 end
 
-disp('Done computing adjustment map.');
+%disp('Done computing adjustment map.');
 
 end

@@ -1,4 +1,4 @@
-function [S,V] = getNystromApproximation(I,nbEigenvectors,nbSamples,sigma)
+function [U,S,V] = getNystromApproximation(I,nbEigenvectors,nbSamples,sigma)
 %1. Get samples
 %2. Get correspondances between sampled and unsampled points
 %3. Compute the approximation
@@ -56,15 +56,15 @@ end
 %% 3
 %disp('Computing eigenvectors');
 
-% disp('Normalizing A and B for Laplacian...');
-% B_T = B';
-% d1 = sum(A, 2) + sum(B, 2);
-% d2 = sum(B_T, 2) + B_T*(pinv(A)*sum(B, 2));
-% dhat = sqrt(1./[d1; d2]);
-% A = A .* (dhat(1:nbSamples)*dhat(1:nbSamples)');
-% m = M*N - nbSamples;
-% B1 = dhat(1:nbSamples)*dhat(nbSamples+(1:m))';
-% B = B .* B1;
+disp('Normalizing A and B for Laplacian...');
+B_T = B';
+d1 = sum(A, 2) + sum(B, 2);
+d2 = sum(B_T, 2) + B_T*(pinv(A)*sum(B, 2));
+dhat = sqrt(1./[d1; d2]);
+A = A .* (dhat(1:nbSamples)*dhat(1:nbSamples)');
+m = M*N - nbSamples;
+B1 = dhat(1:nbSamples)*dhat(nbSamples+(1:m))';
+B = B .* B1;
 
 
 disp('Orthogalizing and eigendecomposition...');
@@ -84,7 +84,6 @@ U = U(:, ind); % in decreasing order
 L = L(ind, ind); % in decreasing order
 W = W*Asi;
 V = W*U(:, 1:nbEigenvectors)*pinv(sqrt(L(1:nbEigenvectors, 1:nbEigenvectors)));
-S = L;
 
 
 
