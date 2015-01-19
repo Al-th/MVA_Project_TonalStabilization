@@ -1,0 +1,5 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Probl\IeC {\'e}matique}{2}{section.1}
+\contentsline {section}{\numberline {2}Proposition de l'article}{3}{section.2}
+\contentsline {section}{\numberline {3}Impl\IeC {\'e}mentation}{4}{section.3}
+\contentsline {section}{\numberline {4}Discussion}{5}{section.4}

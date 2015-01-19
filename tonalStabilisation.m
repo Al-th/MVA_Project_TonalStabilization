@@ -32,18 +32,12 @@ for anchorIndex = anchor
         frame2 = double(vidFrames(:,:,:,i));
         frame = frame./max(frame(:));
         frame2 = frame2./max(frame2(:));
-        if exist('filteredFrame2','var')
-            [A(:,:,:,i),filteredFrame2] = computeAdjustmentFrame(A(:,:,:,i-1),frame,frame2,4,filteredFrame2);
-        else
-            [A(:,:,:,i),filteredFrame2] = computeAdjustmentFrame(A(:,:,:,i-1),frame,frame2,4);
-        end
-        
+        A(:,:,:,i) = computeAdjustmentFrame(A(:,:,:,i-1),frame,frame2,4);
         frame = frame2;
         n = n+1;
         disp(100*n/nbFrames);
         toc
     end
-    clear filteredFrame2;
     
     n = nbFrames-anchorIndex;
     frame = double(vidFrames(:,:,:,anchorIndex));
@@ -52,11 +46,7 @@ for anchorIndex = anchor
         frame2 = double(vidFrames(:,:,:,i));
         frame = frame./max(frame(:));
         frame2 = frame2./max(frame2(:));
-        if exist('filteredFrame2','var')
-             [A(:,:,:,i),filteredFrame2] = computeAdjustmentFrame(A(:,:,:,i+1),frame,frame2,4,filteredFrame2);
-        else
-             [A(:,:,:,i),filteredFrame2] = computeAdjustmentFrame(A(:,:,:,i+1),frame,frame2,4);
-        end
+        A(:,:,:,i) = computeAdjustmentFrame(A(:,:,:,i+1),frame,frame2,4);
         frame = frame2;
         n=n+1;
         disp(100*n/nbFrames);

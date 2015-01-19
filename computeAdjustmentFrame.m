@@ -1,4 +1,4 @@
-function [Aii,filteredFrame2] = computeAdjustmentFrame(Ai,fi,fii,downsampleFactor,filteredfi)
+function Aii = computeAdjustmentFrame(Ai,fi,fii,downsampleFactor)
 
 downsampledFrame = permute(downsample(permute(downsample(fi,downsampleFactor),[2,1,3]),downsampleFactor),[2,1,3]);
 downsampledFrame2 = permute(downsample(permute(downsample(fii,downsampleFactor),[2,1,3]),downsampleFactor),[2,1,3]);
@@ -10,12 +10,7 @@ downsampledFrame2 = permute(downsample(permute(downsample(fii,downsampleFactor),
 %disp('Bilateral filtering of images...');
 spatialSigma = 0.1*min(width,height);
 rangeSigma = 0.1;
-
-if nargin > 4
-    filteredFrame = filteredfi;
-else
-   filteredFrame = bfilter2(downsampledFrame,5,[spatialSigma,rangeSigma]);
-end
+filteredFrame = bfilter2(downsampledFrame,5,[spatialSigma,rangeSigma]);
 filteredFrame2 = bfilter2(downsampledFrame2,5,[spatialSigma,rangeSigma]);
 %disp('Done.');
 %%
@@ -79,7 +74,6 @@ clear ChiACol AinitCol AfullCol Proj;
 
 ChiACol(:,1) = reshape(R,width*height,1);
 AinitCol(:,1) = reshape(A_init(:,:,1),width*height,1);
-
 
 ChiACol(:,2) = reshape(R,width*height,1);
 AinitCol(:,2) = reshape(A_init(:,:,2),width*height,1);

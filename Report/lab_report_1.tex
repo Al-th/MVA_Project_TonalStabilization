@@ -1,0 +1,51 @@
+\documentclass{article}
+
+\usepackage{graphicx} % Allows the inclusion of images
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{varioref}
+\usepackage{url}
+\usepackage{amsfonts}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[title,titletoc]{appendix}
+
+\usepackage[top=4 cm, bottom=3.8cm, left=3cm, right=3cm]{geometry}
+
+
+
+\title{Tonal Stabilization of Video \\MVA 2014 - Imagerie numérique} % Title
+
+\author{Alexandre \textsc{This}} % Author name
+
+\date{\today} % Specify a date for the report
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+\tableofcontents
+
+\newpage
+\include{Chapters/Resume}
+\include{Chapters/Proposition}
+\include{Chapters/Implementation}
+\include{Chapters/Discussions}
+\appendix
+\include{Chapters/Annexe}
+\newpage
+\bibliographystyle{plain}
+\bibliography{biblio}
+
+\end{document}
