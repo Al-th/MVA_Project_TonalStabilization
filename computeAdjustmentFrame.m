@@ -54,12 +54,14 @@ sigma1 = 5;
 sigma2 = 5;
 sigma3 = 5;
 
+nbEigenValues = 10;
+
 %disp('Computing SVD approximation for dimension 1...');
-[S1,V1] = getNystromApproximation(labFrame(:,:,1),10,300,sigma1);
+[S1,V1] = getNystromApproximation(labFrame(:,:,1),nbEigenValues,300,sigma1);
 %disp('Computing SVD approximation for dimension 2...');
-[S2,V2] = getNystromApproximation(labFrame(:,:,2),10,300,sigma2);
+[S2,V2] = getNystromApproximation(labFrame(:,:,2),nbEigenValues,300,sigma2);
 %disp('Computing SVD approximation for dimension 3...');
-[S3,V3] = getNystromApproximation(labFrame(:,:,3),10,300,sigma3);
+[S3,V3] = getNystromApproximation(labFrame(:,:,3),nbEigenValues,300,sigma3);
 %disp('Done.');
 
 V1 = V1';
@@ -72,19 +74,17 @@ clear ChiACol AinitCol AfullCol Proj;
 
 ChiACol(:,1) = reshape(R,width*height,1);
 AinitCol(:,1) = reshape(A_init(:,:,1),width*height,1);
-Proj(:,1) = V1*AinitCol(:,1);
+
 
 ChiACol(:,2) = reshape(R,width*height,1);
 AinitCol(:,2) = reshape(A_init(:,:,2),width*height,1);
-Proj(:,2) = V2*AinitCol(:,2);
 
 ChiACol(:,3) = reshape(R,width*height,1);
 AinitCol(:,3) = reshape(A_init(:,:,3),width*height,1);
-Proj(:,3) = V3*AinitCol(:,3);
 
-AfullCol(:,1) = real(Proj(:,1)'*V1);
-AfullCol(:,2) = real(Proj(:,2)'*V2);
-AfullCol(:,3) = real(Proj(:,3)'*V3);
+AfullCol(:,1) = (V1'*(S1(1:nbEigenValues,1:nbEigenValues)*V1*AinitCol(:,1))) ./ (V1'*(S1(1:nbEigenValues,1:nbEigenValues)*V1*ChiACol(:,1)));
+AfullCol(:,2) = (V1'*(S1(1:nbEigenValues,1:nbEigenValues)*V1*AinitCol(:,2))) ./ (V1'*(S1(1:nbEigenValues,1:nbEigenValues)*V1*ChiACol(:,2)));
+AfullCol(:,3) = (V1'*(S1(1:nbEigenValues,1:nbEigenValues)*V1*AinitCol(:,3))) ./ (V1'*(S1(1:nbEigenValues,1:nbEigenValues)*V1*ChiACol(:,3)));
 
 Acompl(:,:,1) = reshape(AfullCol(:,1),height,width);
 Acompl(:,:,2) = reshape(AfullCol(:,2),height,width);

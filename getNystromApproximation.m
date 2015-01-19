@@ -67,7 +67,7 @@ end
 % B = B .* B1;
 
 
-disp('Orthogalizing and eigendecomposition...');
+%disp('Orthogalizing and eigendecomposition...');
 Asi = sqrtm(pinv(A));
 B_T = B';
 BBT = B*B_T;
