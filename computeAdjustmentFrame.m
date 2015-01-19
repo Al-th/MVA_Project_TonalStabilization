@@ -1,4 +1,4 @@
-function Aii = computeAdjustmentFrame(Ai,fi,fii,downsampleFactor)
+function [Aii,filteredFrame2] = computeAdjustmentFrame(Ai,fi,fii,downsampleFactor,filteredfi)
 
 downsampledFrame = permute(downsample(permute(downsample(fi,downsampleFactor),[2,1,3]),downsampleFactor),[2,1,3]);
 downsampledFrame2 = permute(downsample(permute(downsample(fii,downsampleFactor),[2,1,3]),downsampleFactor),[2,1,3]);
@@ -10,7 +10,12 @@ downsampledFrame2 = permute(downsample(permute(downsample(fii,downsampleFactor),
 %disp('Bilateral filtering of images...');
 spatialSigma = 0.1*min(width,height);
 rangeSigma = 0.1;
-filteredFrame = bfilter2(downsampledFrame,5,[spatialSigma,rangeSigma]);
+
+if nargin > 4
+    filteredFrame = filteredfi;
+else
+   filteredFrame = bfilter2(downsampledFrame,5,[spatialSigma,rangeSigma]);
+end
 filteredFrame2 = bfilter2(downsampledFrame2,5,[spatialSigma,rangeSigma]);
 %disp('Done.');
 %%
@@ -25,7 +30,7 @@ labFrame2 = RGB2Lab(filteredFrame2);
 %disp('Done.');
 
 %disp('Computing robust set of correspondances ...');
-R = abs((labFrame(:,:,1) - mean(mean(labFrame(:,:,1)))) - (labFrame2(:,:,1) - mean(mean(labFrame2(:,:,1))))) < 1.5;
+R = abs((labFrame(:,:,1) - mean(mean(labFrame(:,:,1)))) - (labFrame2(:,:,1) - mean(mean(labFrame2(:,:,1))))) < 0.5;
 
 %disp('Done.');
 
@@ -57,11 +62,11 @@ sigma3 = 5;
 nbEigenValues = 10;
 
 %disp('Computing SVD approximation for dimension 1...');
-[S1,V1] = getNystromApproximation(labFrame(:,:,1),nbEigenValues,300,sigma1);
+[S1,V1] = getNystromApproximation(labFrame(:,:,1),nbEigenValues,100,sigma1);
 %disp('Computing SVD approximation for dimension 2...');
-[S2,V2] = getNystromApproximation(labFrame(:,:,2),nbEigenValues,300,sigma2);
+[S2,V2] = getNystromApproximation(labFrame(:,:,2),nbEigenValues,100,sigma2);
 %disp('Computing SVD approximation for dimension 3...');
-[S3,V3] = getNystromApproximation(labFrame(:,:,3),nbEigenValues,300,sigma3);
+[S3,V3] = getNystromApproximation(labFrame(:,:,3),nbEigenValues,100,sigma3);
 %disp('Done.');
 
 V1 = V1';

@@ -1,6 +1,6 @@
 clear;
 clc;
-movieTitle = 'data/greycard.AVI';
+movieTitle = 'data/greycard.avi';
 disp(['Starting algorithm, loading movie ' movieTitle]);
 mov = VideoReader(movieTitle);
 vidFrames = read(mov);
@@ -8,12 +8,12 @@ nbFrames = get(mov,'NumberOfFrames');
 disp('Done.');
 
 %%
-vidFrames = vidFrames(:,:,:,55:75);
-nbFrames = 20;
+vidFrames = vidFrames(:,:,:,120:160);
+nbFrames = 40;
 
 %%
 
-anchor = [3 18];
+anchor = [7 18];
 
 
 clear A;
@@ -32,12 +32,18 @@ for anchorIndex = anchor
         frame2 = double(vidFrames(:,:,:,i));
         frame = frame./max(frame(:));
         frame2 = frame2./max(frame2(:));
-        A(:,:,:,i) = computeAdjustmentFrame(A(:,:,:,i-1),frame,frame2,4);
+        if exist('filteredFrame2','var')
+            [A(:,:,:,i),filteredFrame2] = computeAdjustmentFrame(A(:,:,:,i-1),frame,frame2,4,filteredFrame2);
+        else
+            [A(:,:,:,i),filteredFrame2] = computeAdjustmentFrame(A(:,:,:,i-1),frame,frame2,4);
+        end
+        
         frame = frame2;
         n = n+1;
         disp(100*n/nbFrames);
         toc
     end
+    clear filteredFrame2;
     
     n = nbFrames-anchorIndex;
     frame = double(vidFrames(:,:,:,anchorIndex));
@@ -46,7 +52,11 @@ for anchorIndex = anchor
         frame2 = double(vidFrames(:,:,:,i));
         frame = frame./max(frame(:));
         frame2 = frame2./max(frame2(:));
-        A(:,:,:,i) = computeAdjustmentFrame(A(:,:,:,i+1),frame,frame2,4);
+        if exist('filteredFrame2','var')
+             [A(:,:,:,i),filteredFrame2] = computeAdjustmentFrame(A(:,:,:,i+1),frame,frame2,4,filteredFrame2);
+        else
+             [A(:,:,:,i),filteredFrame2] = computeAdjustmentFrame(A(:,:,:,i+1),frame,frame2,4);
+        end
         frame = frame2;
         n=n+1;
         disp(100*n/nbFrames);
@@ -54,11 +64,16 @@ for anchorIndex = anchor
     end
     
     
+    [X,Y] = meshgrid(1:4:640,1:4:480);
+    [X2,Y2] = meshgrid(1:640,1:480);
     
     upsampledA = zeros(480,640,3,nbFrames);
     for i = 1:nbFrames
-       upsampledA(:,:,:,i) = imresize(A(:,:,:,i),4); 
-
+        fprintf('Computing upsampling at frames %d%', 100*(i/nbFrames));
+        fprintf('\r');
+        upsampledA(:,:,1,i) = interp2(X,Y,A(:,:,1,i),X2,Y2,'linear');
+        upsampledA(:,:,2,i) = interp2(X,Y,A(:,:,2,i),X2,Y2,'spline');
+        upsampledA(:,:,3,i) = interp2(X,Y,A(:,:,3,i),X2,Y2,'spline');
     end
 
     for i = 1:nbFrames
