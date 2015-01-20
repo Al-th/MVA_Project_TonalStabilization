@@ -1,1 +1,9 @@
-\section{Discussion}
+\section{Conclusion}
+
+Dans ce rapport, une présentation succincte de l'algorithme de stabilisation tonale de Zeev et al. (\cite{farbman2011tonal}) a été présenté. Dans un premier temps l'algorithme a été décris, puis dans un second temps des tests ont été réalisés afin de vérifier la validité de l'implémentation, ainsi que pour mettre en valeur différents exemples d'utilisations.\\
+
+On a pu remarquer que dans un certain nombre de cas (précisés dans l'article d'origine par l'auteur), l'algorithme ne se comporte pas comme il serait souhaité. En effet, la perte de cohérence temporelle de la vidéo, a donné de très mauvais résultats. D'autre part, les changements naturels d'illumination sur une séquence a, contrairement à ce qui aurait été souhaité, été la source d'une stabilisation tonale.\\
+
+Malgré cela, cet algorithme présente de très nombreux avantages. Tout d'abord, il permet à l'utilisateur de corriger les séquences avec très peu d'intéraction utilisateur. En effet, l'utilisateur a uniquement à choisir les images de références qui seront utilisées par la suite. D'autre part, l'algorithme ne fait aucune hypothèses a priori sur les paramètres de la caméra.\\
+
+Afin de poursuivre le travail présenté, deux pistes d'améliorations pourraient être suivies. Tout d'abord, on pourrait se pencher sur la question de la sélection automatique des images de références. Cela permettrait à l'algorithme d'être complètement autonome pour réaliser la stabilisation tonale. D'autre part, une détection automatique de perte de cohérence temporelle permettrait d'éviter les résultats observés dans la partie précédente.

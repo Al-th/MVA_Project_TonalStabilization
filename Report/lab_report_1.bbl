@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{farbman2011tonal}
+Zeev Farbman and Dani Lischinski.
+\newblock Tonal stabilization of video.
+\newblock In {\em ACM Transactions on Graphics (TOG)}, volume~30, page~89. ACM,
+  2011.
+
+\bibitem{fowlkes2004spectral}
+Charless Fowlkes, Serge Belongie, Fan Chung, and Jitendra Malik.
+\newblock Spectral grouping using the nystrom method.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 26(2):214--225, 2004.
+
+\end{thebibliography}

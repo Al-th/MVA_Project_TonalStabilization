@@ -21,6 +21,7 @@ for i = 1:N*N
         W(i,j) = exp(-abs(Icorr(i)-Icorr(j))^2/sigma^2);
     end
 end
+
 imagesc(W);
 pause(0.1);
 tic
@@ -31,23 +32,31 @@ toc
 % Draw nbAff random correspondances
 % Store the correspondances in randPixels
 % Store the indexes
-nbAff = 100;
-nbEigen = 3;
-tic
-[S2,V2] = getNystromApproximation(I,nbEigen,nbAff,sigma);
-toc
+subplot(2,7,1)
+imagesc(abs(U*S*V'));
+freezeColors();
+subplot(2,7,8);
+imagesc(abs(U*S*V'-U*S*V'));
 
-S2 = real(S2);
-V2 = real(V2);
-% 
-% hold on
-% plot(V(:,2));   
-% plot(-V2(2,:),'r--');
+for i = 1:5
+    clear S2 V2;
+    nbAff = 100;
+    nbEigen = ((i-1)*2)+1;
+    tic
+    [S2,V2] = getNystromApproximation(I,nbEigen,nbAff,sigma);
+    toc
 
+    S2 = real(S2);
+    V2 = real(V2);
 
-subplot(3,1,1)
-imagesc(U*S*V');
-subplot(3,1,2);
-imagesc(V2*S2(1:nbEigen,1:nbEigen)*V2');
-subplot(3,1,3);
-imagesc(V2*S2(1:nbEigen,1:nbEigen)*V2' -  U*S*V');
+    subplot(2,7,i+1);
+    imagesc(abs(V2*S2(1:nbEigen,1:nbEigen)*V2'));
+    freezeColors();
+    subplot(2,7,i+8);
+    imagesc(abs(V2*S2(1:nbEigen,1:nbEigen)*V2' - U*S*V'));
+    
+    difference = single(V2*S2(1:nbEigen,1:nbEigen)*V2') - single(U*S*V');
+    squaredError = difference .^ 2;
+    meanSquaredError = sum(squaredError(:)) / numel(V2*S2(1:nbEigen,1:nbEigen)*V2');
+    rmsError(i) = sqrt(meanSquaredError);
+end

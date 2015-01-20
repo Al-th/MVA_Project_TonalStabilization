@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.10)  19 JAN 2015 11:40
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.10)  20 JAN 2015 20:55
 entering extended mode
 **lab_report_1.tex
 
@@ -699,27 +699,519 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 
 {C:/Users/athis/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 ("E:\Fichiers\Work\ENS 2014-2015\Numerical images\MVA_TonalStabilization\Report
-\Chapters/Resume.tex") [2
+\Chapters/Resume.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
-]
+ []
+
+<Chapters/Images/fig_unstable2.png, id=82, 299.61937pt x 200.24812pt>
+File: Chapters/Images/fig_unstable2.png Graphic file (type png)
+
+<use Chapters/Images/fig_unstable2.png>
+Package pdftex.def Info: Chapters/Images/fig_unstable2.png used on input line 8
+.
+(pdftex.def)             Requested size: 177.42868pt x 118.58536pt.
+
+<Chapters/Images/fig_unstable22.png, id=83, 299.61937pt x 198.7425pt>
+File: Chapters/Images/fig_unstable22.png Graphic file (type png)
+
+<use Chapters/Images/fig_unstable22.png>
+Package pdftex.def Info: Chapters/Images/fig_unstable22.png used on input line 
+9.
+(pdftex.def)             Requested size: 177.42868pt x 117.69374pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+) [2
+
+ <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Report
+/Chapters/Images/fig_unstable2.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/
+Numerical images/MVA_TonalStabilization/Report/Chapters/Images/fig_unstable22.p
+ng (PNG copy)>]
 ("E:\Fichiers\Work\ENS 2014-2015\Numerical images\MVA_TonalStabilization\Report
-\Chapters/Proposition.tex") [3
+\Chapters/Proposition.tex"
+<Chapters/Images/bilteral_filter1.png, id=92, 457.71pt x 344.03531pt>
+File: Chapters/Images/bilteral_filter1.png Graphic file (type png)
+
+<use Chapters/Images/bilteral_filter1.png>
+Package pdftex.def Info: Chapters/Images/bilteral_filter1.png used on input lin
+e 14.
+(pdftex.def)             Requested size: 177.42868pt x 133.36479pt.
+
+<Chapters/Images/bilteral_filter2.png, id=94, 457.71pt x 343.2825pt>
+File: Chapters/Images/bilteral_filter2.png Graphic file (type png)
+
+<use Chapters/Images/bilteral_filter2.png>
+Package pdftex.def Info: Chapters/Images/bilteral_filter2.png used on input lin
+e 15.
+(pdftex.def)             Requested size: 177.42868pt x 133.07297pt.
+
+<Chapters/Images/rs1.png, id=97, 456.95718pt x 342.5297pt>
+File: Chapters/Images/rs1.png Graphic file (type png)
+
+<use Chapters/Images/rs1.png>
+Package pdftex.def Info: Chapters/Images/rs1.png used on input line 35.
+(pdftex.def)             Requested size: 119.76808pt x 89.77689pt.
+
+<Chapters/Images/rs2.png, id=98, 456.95718pt x 343.2825pt>
+File: Chapters/Images/rs2.png Graphic file (type png)
+
+<use Chapters/Images/rs2.png>
+Package pdftex.def Info: Chapters/Images/rs2.png used on input line 36.
+(pdftex.def)             Requested size: 119.76808pt x 89.97418pt.
+
+<Chapters/Images/rs3.png, id=99, 449.42906pt x 350.05782pt>
+File: Chapters/Images/rs3.png Graphic file (type png)
+
+<use Chapters/Images/rs3.png>
+Package pdftex.def Info: Chapters/Images/rs3.png used on input line 37.
+(pdftex.def)             Requested size: 119.76808pt x 93.28299pt.
+ [3
 
 
-]
+ <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Report
+/Chapters/Images/bilteral_filter1.png> <E:/Fichiers/Work/ENS 2014-2015/Numerica
+l images/MVA_TonalStabilization/Report/Chapters/Images/bilteral_filter2.png>]
+
+LaTeX Warning: Citation `fowlkes2004spectral' on page 4 undefined on input line
+ 74.
+
+[4 <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Repo
+rt/Chapters/Images/rs1.png> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MV
+A_TonalStabilization/Report/Chapters/Images/rs2.png> <E:/Fichiers/Work/ENS 2014
+-2015/Numerical images/MVA_TonalStabilization/Report/Chapters/Images/rs3.png>]
+<Chapters/Images/alignement.png, id=136, 183.68625pt x 105.39375pt>
+File: Chapters/Images/alignement.png Graphic file (type png)
+
+<use Chapters/Images/alignement.png>
+Package pdftex.def Info: Chapters/Images/alignement.png used on input line 88.
+(pdftex.def)             Requested size: 221.78923pt x 127.26468pt.
+) [5 <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Re
+port/Chapters/Images/alignement.png>]
 ("E:\Fichiers\Work\ENS 2014-2015\Numerical images\MVA_TonalStabilization\Report
-\Chapters/Implementation.tex") [4
+\Chapters/Implementation.tex"
+<Chapters/Images/nystrom_synthetic.png, id=146, 142.28156pt x 142.28156pt>
+File: Chapters/Images/nystrom_synthetic.png Graphic file (type png)
+
+<use Chapters/Images/nystrom_synthetic.png>
+Package pdftex.def Info: Chapters/Images/nystrom_synthetic.png used on input li
+ne 12.
+(pdftex.def)             Requested size: 88.71434pt x 88.71733pt.
+
+<Chapters/Images/rms.png, id=149, 422.32782pt x 316.18124pt>
+File: Chapters/Images/rms.png Graphic file (type png)
+
+<use Chapters/Images/rms.png>
+Package pdftex.def Info: Chapters/Images/rms.png used on input line 21.
+(pdftex.def)             Requested size: 221.78923pt x 166.0507pt.
+
+<Chapters/Images/eigenvalues.png, id=150, 748.29562pt x 508.14844pt>
+File: Chapters/Images/eigenvalues.png Graphic file (type png)
+
+<use Chapters/Images/eigenvalues.png>
+Package pdftex.def Info: Chapters/Images/eigenvalues.png used on input line 28.
+
+(pdftex.def)             Requested size: 443.57848pt x 301.2239pt.
 
 
-]
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <6.49994> not available
+(Font)              size <6> substituted on input line 29.
+
+[6
+
+
+ <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Report
+/Chapters/Images/nystrom_synthetic.png> <E:/Fichiers/Work/ENS 2014-2015/Numeric
+al images/MVA_TonalStabilization/Report/Chapters/Images/rms.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+<Chapters/Images/Seq_init/1.png, id=161, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_init/1.png Graphic file (type png)
+
+<use Chapters/Images/Seq_init/1.png>
+Package pdftex.def Info: Chapters/Images/Seq_init/1.png used on input line 41.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_init/2.png, id=162, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_init/2.png Graphic file (type png)
+
+<use Chapters/Images/Seq_init/2.png>
+Package pdftex.def Info: Chapters/Images/Seq_init/2.png used on input line 42.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_init/3.png, id=163, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_init/3.png Graphic file (type png)
+
+<use Chapters/Images/Seq_init/3.png>
+Package pdftex.def Info: Chapters/Images/Seq_init/3.png used on input line 43.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_init/4.png, id=164, 299.61937pt x 200.24812pt>
+File: Chapters/Images/Seq_init/4.png Graphic file (type png)
+
+<use Chapters/Images/Seq_init/4.png>
+Package pdftex.def Info: Chapters/Images/Seq_init/4.png used on input line 44.
+(pdftex.def)             Requested size: 88.71434pt x 59.28963pt.
+
+<Chapters/Images/Seq_init/5.png, id=165, 299.61937pt x 200.24812pt>
+File: Chapters/Images/Seq_init/5.png Graphic file (type png)
+
+<use Chapters/Images/Seq_init/5.png>
+Package pdftex.def Info: Chapters/Images/Seq_init/5.png used on input line 45.
+(pdftex.def)             Requested size: 88.71434pt x 59.28963pt.
+
+<Chapters/Images/Seq_cold/1.png, id=166, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_cold/1.png Graphic file (type png)
+
+<use Chapters/Images/Seq_cold/1.png>
+Package pdftex.def Info: Chapters/Images/Seq_cold/1.png used on input line 47.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_cold/2.png, id=167, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_cold/2.png Graphic file (type png)
+
+<use Chapters/Images/Seq_cold/2.png>
+Package pdftex.def Info: Chapters/Images/Seq_cold/2.png used on input line 48.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_cold/3.png, id=168, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_cold/3.png Graphic file (type png)
+
+<use Chapters/Images/Seq_cold/3.png>
+Package pdftex.def Info: Chapters/Images/Seq_cold/3.png used on input line 49.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_cold/4.png, id=169, 299.61937pt x 200.24812pt>
+File: Chapters/Images/Seq_cold/4.png Graphic file (type png)
+
+<use Chapters/Images/Seq_cold/4.png>
+Package pdftex.def Info: Chapters/Images/Seq_cold/4.png used on input line 50.
+(pdftex.def)             Requested size: 88.71434pt x 59.28963pt.
+
+<Chapters/Images/Seq_cold/5.png, id=170, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_cold/5.png Graphic file (type png)
+
+<use Chapters/Images/Seq_cold/5.png>
+Package pdftex.def Info: Chapters/Images/Seq_cold/5.png used on input line 51.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_warm/1.png, id=171, 299.61937pt x 200.24812pt>
+File: Chapters/Images/Seq_warm/1.png Graphic file (type png)
+
+<use Chapters/Images/Seq_warm/1.png>
+Package pdftex.def Info: Chapters/Images/Seq_warm/1.png used on input line 53.
+(pdftex.def)             Requested size: 88.71434pt x 59.28963pt.
+
+<Chapters/Images/Seq_warm/2.png, id=172, 299.61937pt x 200.24812pt>
+File: Chapters/Images/Seq_warm/2.png Graphic file (type png)
+
+<use Chapters/Images/Seq_warm/2.png>
+Package pdftex.def Info: Chapters/Images/Seq_warm/2.png used on input line 54.
+(pdftex.def)             Requested size: 88.71434pt x 59.28963pt.
+
+<Chapters/Images/Seq_warm/3.png, id=173, 299.61937pt x 200.24812pt>
+File: Chapters/Images/Seq_warm/3.png Graphic file (type png)
+
+<use Chapters/Images/Seq_warm/3.png>
+Package pdftex.def Info: Chapters/Images/Seq_warm/3.png used on input line 55.
+(pdftex.def)             Requested size: 88.71434pt x 59.28963pt.
+
+<Chapters/Images/Seq_warm/4.png, id=174, 299.61937pt x 199.49532pt>
+File: Chapters/Images/Seq_warm/4.png Graphic file (type png)
+
+<use Chapters/Images/Seq_warm/4.png>
+Package pdftex.def Info: Chapters/Images/Seq_warm/4.png used on input line 56.
+(pdftex.def)             Requested size: 88.71434pt x 59.06673pt.
+
+<Chapters/Images/Seq_warm/5.png, id=175, 299.61937pt x 200.24812pt>
+File: Chapters/Images/Seq_warm/5.png Graphic file (type png)
+
+<use Chapters/Images/Seq_warm/5.png>
+Package pdftex.def Info: Chapters/Images/Seq_warm/5.png used on input line 57.
+(pdftex.def)             Requested size: 88.71434pt x 59.28963pt.
+
+Overfull \hbox (59.99323pt too wide) in paragraph at lines 40--59
+[][] 
+ []
+
+[7 <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Repo
+rt/Chapters/Images/eigenvalues.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+<Chapters/Images/Seq_ill/2.png, id=186, 265.74281pt x 210.03468pt>
+File: Chapters/Images/Seq_ill/2.png Graphic file (type png)
+
+<use Chapters/Images/Seq_ill/2.png>
+Package pdftex.def Info: Chapters/Images/Seq_ill/2.png used on input line 70.
+(pdftex.def)             Requested size: 88.71434pt x 70.11607pt.
+
+<Chapters/Images/Seq_ill/3.png, id=187, 265.74281pt x 210.03468pt>
+File: Chapters/Images/Seq_ill/3.png Graphic file (type png)
+
+<use Chapters/Images/Seq_ill/3.png>
+Package pdftex.def Info: Chapters/Images/Seq_ill/3.png used on input line 71.
+(pdftex.def)             Requested size: 88.71434pt x 70.11607pt.
+
+<Chapters/Images/Seq_ill/4.png, id=188, 265.74281pt x 210.03468pt>
+File: Chapters/Images/Seq_ill/4.png Graphic file (type png)
+
+<use Chapters/Images/Seq_ill/4.png>
+Package pdftex.def Info: Chapters/Images/Seq_ill/4.png used on input line 72.
+(pdftex.def)             Requested size: 88.71434pt x 70.11607pt.
+
+<Chapters/Images/Seq_ill/5.png, id=189, 265.74281pt x 210.03468pt>
+File: Chapters/Images/Seq_ill/5.png Graphic file (type png)
+
+<use Chapters/Images/Seq_ill/5.png>
+Package pdftex.def Info: Chapters/Images/Seq_ill/5.png used on input line 73.
+(pdftex.def)             Requested size: 88.71434pt x 70.11607pt.
+
+<Chapters/Images/Seq_ill/6.png, id=190, 265.74281pt x 210.03468pt>
+File: Chapters/Images/Seq_ill/6.png Graphic file (type png)
+
+<use Chapters/Images/Seq_ill/6.png>
+Package pdftex.def Info: Chapters/Images/Seq_ill/6.png used on input line 74.
+(pdftex.def)             Requested size: 88.71434pt x 70.11607pt.
+
+<Chapters/Images/Seq_ill_stab/2.png, id=191, 265.74281pt x 210.03468pt>
+File: Chapters/Images/Seq_ill_stab/2.png Graphic file (type png)
+
+<use Chapters/Images/Seq_ill_stab/2.png>
+Package pdftex.def Info: Chapters/Images/Seq_ill_stab/2.png used on input line 
+76.
+(pdftex.def)             Requested size: 88.71434pt x 70.11607pt.
+
+<Chapters/Images/Seq_ill_stab/3.png, id=192, 265.74281pt x 210.03468pt>
+File: Chapters/Images/Seq_ill_stab/3.png Graphic file (type png)
+
+<use Chapters/Images/Seq_ill_stab/3.png>
+Package pdftex.def Info: Chapters/Images/Seq_ill_stab/3.png used on input line 
+77.
+(pdftex.def)             Requested size: 88.71434pt x 70.11607pt.
+
+<Chapters/Images/Seq_ill_stab/4.png, id=193, 265.74281pt x 210.03468pt>
+File: Chapters/Images/Seq_ill_stab/4.png Graphic file (type png)
+
+<use Chapters/Images/Seq_ill_stab/4.png>
+Package pdftex.def Info: Chapters/Images/Seq_ill_stab/4.png used on input line 
+78.
+(pdftex.def)             Requested size: 88.71434pt x 70.11607pt.
+
+<Chapters/Images/Seq_ill_stab/5.png, id=194, 265.74281pt x 210.03468pt>
+File: Chapters/Images/Seq_ill_stab/5.png Graphic file (type png)
+
+<use Chapters/Images/Seq_ill_stab/5.png>
+Package pdftex.def Info: Chapters/Images/Seq_ill_stab/5.png used on input line 
+79.
+(pdftex.def)             Requested size: 88.71434pt x 70.11607pt.
+
+<Chapters/Images/Seq_ill_stab/6.png, id=195, 265.74281pt x 210.03468pt>
+File: Chapters/Images/Seq_ill_stab/6.png Graphic file (type png)
+
+<use Chapters/Images/Seq_ill_stab/6.png>
+Package pdftex.def Info: Chapters/Images/Seq_ill_stab/6.png used on input line 
+80.
+(pdftex.def)             Requested size: 88.71434pt x 70.11607pt.
+
+Overfull \hbox (59.99323pt too wide) in paragraph at lines 69--83
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+[8 <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Repo
+rt/Chapters/Images/Seq_init/1.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/N
+umerical images/MVA_TonalStabilization/Report/Chapters/Images/Seq_init/2.png (P
+NG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilizati
+on/Report/Chapters/Images/Seq_init/3.png (PNG copy)> <E:/Fichiers/Work/ENS 2014
+-2015/Numerical images/MVA_TonalStabilization/Report/Chapters/Images/Seq_init/4
+.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStab
+ilization/Report/Chapters/Images/Seq_init/5.png (PNG copy)> <E:/Fichiers/Work/E
+NS 2014-2015/Numerical images/MVA_TonalStabilization/Report/Chapters/Images/Seq
+_cold/1.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_To
+nalStabilization/Report/Chapters/Images/Seq_cold/2.png (PNG copy)> <E:/Fichiers
+/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Report/Chapters/Ima
+ges/Seq_cold/3.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images
+/MVA_TonalStabilization/Report/Chapters/Images/Seq_cold/4.png (PNG copy)> <E:/F
+ichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Report/Chapt
+ers/Images/Seq_cold/5.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical
+ images/MVA_TonalStabilization/Report/Chapters/Images/Seq_warm/1.png (PNG copy)
+> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Repor
+t/Chapters/Images/Seq_warm/2.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Nu
+merical images/MVA_TonalStabilization/Report/Chapters/Images/Seq_warm/3.png (PN
+G copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilizatio
+n/Report/Chapters/Images/Seq_warm/4.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-
+2015/Numerical images/MVA_TonalStabilization/Report/Chapters/Images/Seq_warm/5.
+png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabi
+lization/Report/Chapters/Images/Seq_ill/2.png (PNG copy)> <E:/Fichiers/Work/ENS
+ 2014-2015/Numerical images/MVA_TonalStabilization/Report/Chapters/Images/Seq_i
+ll/3.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_Tonal
+Stabilization/Report/Chapters/Images/Seq_ill/4.png (PNG copy)> <E:/Fichiers/Wor
+k/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Report/Chapters/Images/
+Seq_ill/5.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_
+TonalStabilization/Report/Chapters/Images/Seq_ill/6.png (PNG copy)> <E:/Fichier
+s/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Report/Chapters/Im
+ages/Seq_ill_stab/2.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical i
+mages/MVA_TonalStabilization/Report/Chapters/Images/Seq_ill_stab/3.png (PNG cop
+y)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Rep
+ort/Chapters/Images/Seq_ill_stab/4.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2
+015/Numerical images/MVA_TonalStabilization/Report/Chapters/Images/Seq_ill_stab
+/5.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalSt
+abilization/Report/Chapters/Images/Seq_ill_stab/6.png (PNG copy)>]
+<Chapters/Images/Seq_temp/1.png, id=202, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_temp/1.png Graphic file (type png)
+
+<use Chapters/Images/Seq_temp/1.png>
+Package pdftex.def Info: Chapters/Images/Seq_temp/1.png used on input line 94.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_temp/2.png, id=203, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_temp/2.png Graphic file (type png)
+
+<use Chapters/Images/Seq_temp/2.png>
+Package pdftex.def Info: Chapters/Images/Seq_temp/2.png used on input line 95.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_temp/3.png, id=204, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_temp/3.png Graphic file (type png)
+
+<use Chapters/Images/Seq_temp/3.png>
+Package pdftex.def Info: Chapters/Images/Seq_temp/3.png used on input line 96.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_temp/4.png, id=205, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_temp/4.png Graphic file (type png)
+
+<use Chapters/Images/Seq_temp/4.png>
+Package pdftex.def Info: Chapters/Images/Seq_temp/4.png used on input line 97.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_temp/5.png, id=206, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_temp/5.png Graphic file (type png)
+
+<use Chapters/Images/Seq_temp/5.png>
+Package pdftex.def Info: Chapters/Images/Seq_temp/5.png used on input line 98.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_temp_stab/1.png, id=207, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_temp_stab/1.png Graphic file (type png)
+
+<use Chapters/Images/Seq_temp_stab/1.png>
+Package pdftex.def Info: Chapters/Images/Seq_temp_stab/1.png used on input line
+ 100.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_temp_stab/2.png, id=208, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_temp_stab/2.png Graphic file (type png)
+
+<use Chapters/Images/Seq_temp_stab/2.png>
+Package pdftex.def Info: Chapters/Images/Seq_temp_stab/2.png used on input line
+ 101.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_temp_stab/3.png, id=209, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_temp_stab/3.png Graphic file (type png)
+
+<use Chapters/Images/Seq_temp_stab/3.png>
+Package pdftex.def Info: Chapters/Images/Seq_temp_stab/3.png used on input line
+ 102.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_temp_stab/4.png, id=210, 299.61937pt x 198.7425pt>
+File: Chapters/Images/Seq_temp_stab/4.png Graphic file (type png)
+
+<use Chapters/Images/Seq_temp_stab/4.png>
+Package pdftex.def Info: Chapters/Images/Seq_temp_stab/4.png used on input line
+ 103.
+(pdftex.def)             Requested size: 88.71434pt x 58.84383pt.
+
+<Chapters/Images/Seq_temp_stab/5.png, id=211, 299.61937pt x 200.24812pt>
+File: Chapters/Images/Seq_temp_stab/5.png Graphic file (type png)
+
+<use Chapters/Images/Seq_temp_stab/5.png>
+Package pdftex.def Info: Chapters/Images/Seq_temp_stab/5.png used on input line
+ 104.
+(pdftex.def)             Requested size: 88.71434pt x 59.28963pt.
+
+Overfull \hbox (59.99323pt too wide) in paragraph at lines 93--107
+[][] 
+ []
+
+) [9 <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Re
+port/Chapters/Images/Seq_temp/1.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015
+/Numerical images/MVA_TonalStabilization/Report/Chapters/Images/Seq_temp/2.png 
+(PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabiliza
+tion/Report/Chapters/Images/Seq_temp/3.png (PNG copy)> <E:/Fichiers/Work/ENS 20
+14-2015/Numerical images/MVA_TonalStabilization/Report/Chapters/Images/Seq_temp
+/4.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalSt
+abilization/Report/Chapters/Images/Seq_temp/5.png (PNG copy)> <E:/Fichiers/Work
+/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Report/Chapters/Images/S
+eq_temp_stab/1.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images
+/MVA_TonalStabilization/Report/Chapters/Images/Seq_temp_stab/2.png (PNG copy)> 
+<E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStabilization/Report/
+Chapters/Images/Seq_temp_stab/3.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015
+/Numerical images/MVA_TonalStabilization/Report/Chapters/Images/Seq_temp_stab/4
+.png (PNG copy)> <E:/Fichiers/Work/ENS 2014-2015/Numerical images/MVA_TonalStab
+ilization/Report/Chapters/Images/Seq_temp_stab/5.png (PNG copy)>]
 ("E:\Fichiers\Work\ENS 2014-2015\Numerical images\MVA_TonalStabilization\Report
-\Chapters/Discussions.tex") [5
+\Chapters/Discussions.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+) [10
 
 
 ]
 No file Chapters/Annexe.tex.
-No file lab_report_1.bbl.
+
+("E:\Fichiers\Work\ENS 2014-2015\Numerical images\MVA_TonalStabilization\Report
+\lab_report_1.bbl")
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
+ [11
+
+
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
 
 ("E:\Fichiers\Work\ENS 2014-2015\Numerical images\MVA_TonalStabilization\Report
@@ -737,27 +1229,52 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `lab_report_1.out' has not changed.
-(rerunfilecheck)             Checksum: EB3EFC600174E6D30D2B7032B6071AFC;211.
+(rerunfilecheck)             Checksum: 7F9B7006FB14D10428309286077D392D;989.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.49994pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 9601 strings out of 494045
- 143030 string characters out of 3146774
- 233725 words of memory out of 3000000
- 12732 multiletter control sequences out of 15000+200000
- 13574 words of font info for 39 fonts, out of 3000000 for 9000
+ 9908 strings out of 494045
+ 151499 string characters out of 3146774
+ 244958 words of memory out of 3000000
+ 12966 multiletter control sequences out of 15000+200000
+ 20395 words of font info for 54 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,6n,38p,252b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,11n,39p,603b,377s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\athis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecrm1000.pk> <C:\Users\athis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecbx1000.pk> <C:\Users\athis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\athis\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\athis\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\athis\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk>
-Output written on lab_report_1.pdf (5 pages, 46193 bytes).
+ecrm0600.pk> <C:\Users\athis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecti1000.pk> <C:\Users\athis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\eccc1000.pk> <C:\Users\athis\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\athis\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\athis\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\athis\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Us
+ers\athis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.
+pk> <C:\Users\athis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecrm1200.pk> <C:\Users\athis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
+\ec\dpi600\ecti1728.pk> <C:\Users\athis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\jknappen\ec\dpi600\ecrm1728.pk><E:/Systeme/Program Files/MikTex/fonts/type1/p
+ublic/amsfonts/cm/cmex10.pfb><E:/Systeme/Program Files/MikTex/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb><E:/Systeme/Program Files/MikTex/fonts/type1/public/am
+sfonts/cm/cmmi5.pfb><E:/Systeme/Program Files/MikTex/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb><E:/Systeme/Program Files/MikTex/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><E:/Systeme/Program Files/MikTex/fonts/type1/public/amsfonts/cm/cmr5.
+pfb><E:/Systeme/Program Files/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E
+:/Systeme/Program Files/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Sy
+steme/Program Files/MikTex/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on lab_report_1.pdf (11 pages, 3840512 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 585 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 335 words of extra memory for PDF output out of 10000 (max. 10000000)
 
