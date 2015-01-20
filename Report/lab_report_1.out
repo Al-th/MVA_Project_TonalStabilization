@@ -4,7 +4,7 @@
 \BOOKMARK [1][-]{section.2}{M\351thode propos\351e}{}% 4
 \BOOKMARK [2][-]{subsection.2.1}{S\351lection d'images de r\351f\351rences}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.2}{Lissage avec pr\351servation des bordures}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.3}{Ensemble de pixels en correspondances}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Mise en correspondances de pixels}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.4}{Carte d'ajustement}{section.2}% 8
 \BOOKMARK [2][-]{subsection.2.5}{R\351-\351chantillonnage et alignement tonal}{section.2}% 9
 \BOOKMARK [1][-]{section.3}{Impl\351mentation et tests}{}% 10

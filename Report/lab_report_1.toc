@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {2}M\IeC {\'e}thode propos\IeC {\'e}e}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}S\IeC {\'e}lection d'images de r\IeC {\'e}f\IeC {\'e}rences}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Lissage avec pr\IeC {\'e}servation des bordures}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Ensemble de pixels en correspondances}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Mise en correspondances de pixels}{3}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Carte d'ajustement}{4}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}R\IeC {\'e}-\IeC {\'e}chantillonnage et alignement tonal}{5}{subsection.2.5}
 \contentsline {section}{\numberline {3}Impl\IeC {\'e}mentation et tests}{6}{section.3}

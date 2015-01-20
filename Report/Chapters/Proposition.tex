@@ -1,9 +1,9 @@
 \section{Méthode proposée}
-La méthode proposée par l'article \cite{farbman2011tonal} se décompose en un certain nombre d'étapes qui seront décrites dans ce chapitre
+La méthode proposée par l'article \cite{farbman2011tonal} se décompose en un certain nombre d'étapes qui seront décrites dans ce chapitre.
 
 \subsection{Sélection d'images de références}
 Afin de réaliser la stabilisation tonale de la séquence d'image, l'utilisateur doit choisir une (ou des) image de référence. Ces images sont les images que l'utilisateur choisit comme référence de tonalité. 
-Les auteurs proposent de choisir des images de références par paires, et ces paires délimitent des parties de la séquence dans lesquelles une importante variation de la tonalité a lieu.
+Les auteurs proposent de choisir des images de références par paires, ces paires délimitant des parties de la séquence dans lesquelles une importante variation de la tonalité a lieu.
  
 \subsection{Lissage avec préservation des bordures}
 Dans un second temps, un lissage des images avec un filtre préservant les bordures est appliqué. Cela a pour impact d'atténuer les variations qui ne proviennent pas des paramètres de tonalité de la caméra. 
@@ -14,13 +14,13 @@ Dans un second temps, un lissage des images avec un filtre préservant les bordu
 \includegraphics[width = 0.4\textwidth]{Chapters/Images/bilteral_filter1.png}&
 \includegraphics[width = 0.4\textwidth]{Chapters/Images/bilteral_filter2.png}
 \end{tabular}
-\caption{Left : Original downsampled image, Right : Bilateral filter on the image with recommended (default) parameters}
+\caption{Left : Image d'origine sous échantillonnée, Right : Filtre bilatéral avec les paramètres recommandés}
 \end{figure}
 
-\subsection{Ensemble de pixels en correspondances}
-Comme dans une vidéo, les images sont cohérentes spatialement et temporellement, une grande partie des pixels de l'image peuvent être mis en correspondance. Afin de réaliser cela, les auteurs proposent d'utiliser la luminance de deux images consécutives afin de sélectionner ces pixels.
+\subsection{Mise en correspondances de pixels}
+Comme, dans une vidéo, les images sont cohérentes spatialement et temporellement, une grande partie des pixels de l'image peuvent être mis en correspondances. Afin de réaliser cela, les auteurs proposent d'utiliser la luminance de deux images consécutives afin de sélectionner ces pixels.
 
-A partir des composantes R,G,B d'une image, la luminance se calcule par $L = 0,299 R + 0,587 G + 0,114 B$. Les auteurs proposent de conserver dans l'ensemble des correspondances (\textit{robust set}) les pixels dont la luminance a peu changé entre deux images successives. Cette condition est exprimée par l'équation \ref{eqn_robust}
+A partir des composantes R,G,B d'une image, la luminance peut s'écrire sous la forme $L = 0,299 R + 0,587 G + 0,114 B$. Les auteurs proposent de conserver dans l'ensemble des correspondances (\textit{robust set}) les pixels dont la luminance a peu changé entre deux images successives. Cette condition est exprimée par l'équation \ref{eqn_robust}
 
 \begin{equation}
 R_{i/i+1} = \left\{x \: s.t. |(L_{i}(x)-\mu(L_{i})) - (L_{i+1}(x)-\mu(L_{i+1}))| < 0.05 \right\}
@@ -62,7 +62,8 @@ A_{i+1}(x) = \frac{\sum_{r=0}^{N}{w(x,x_{r})\hat{A}_{i+1}(x_{r})}}{\sum_{r=0}^{N
 \label{eqn_aipun}
 \end{equation}
 
-Avec $\chi_{A_{i+1}} \equiv R_{i/i+1}$, et $w(a,b) = exp(-\frac{||c(a)-c(b)||^2}{2\sigma_{c}^{2}})$, $c(x)$ étant la couleur du pixel $x$ dans l'espace couleur CIE Lab. Le passage dans l'espace couleur CIE Lab permet de considérer des distance entre couleurs qui ont un sens en regard de la perception des couleurs.
+
+$\chi_{A_{i+1}} \equiv R_{i/i+1}$, et $w(a,b) = exp(-\frac{||c(a)-c(b)||^2}{2\sigma_{c}^{2}})$, $c(x)$ étant la couleur du pixel $x$ dans l'espace couleur CIE Lab. Le passage dans l'espace couleur CIE Lab permet de considérer des distance entre couleurs qui ont un sens en regard de la perception des couleurs.\\
 
 On peut réécrire l'équation \ref{eqn_aipun} sous la forme matricielle \ref{eqn_aipun_mat} :
 
@@ -71,7 +72,7 @@ A_{i+1}(x) = \frac{W\hat{A}_{i+1}}{W\hat{\chi}_{A_{i+1}}}
 \label{eqn_aipun_mat}
 \end{equation}
 
-On note que la matrice $W$ est de taille $N\times N$, et est donc très coûteuse à calculer. De plus, l'évaluation de \ref{eqn_aipun_mat} est coûteuse. Les auteurs proposent d'utiliser la méthode Nyström \cite{fowlkes2004spectral} afin de calculer une approximation de $W$ : $\tilde{W} = U\tilde{D}U^{T}$ avec $\tilde{D}$ une matrice diagonale contenant les valeurs propres de $W$ les plus grandes.
+On note que la matrice $W$ est de taille $N\times N$. Elle est donc très coûteuse à calculer. De plus, l'évaluation de \ref{eqn_aipun_mat} est coûteuse. Les auteurs proposent d'utiliser la méthode Nyström \cite{fowlkes2004spectral} afin de calculer une approximation de $W$ : $\tilde{W} = U\tilde{D}U^{T}$ avec $\tilde{D}$ une matrice diagonale contenant les plus grandes valeurs propres de $W$ .
 
 Ainsi on a : 
 

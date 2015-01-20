@@ -10,7 +10,7 @@ Afin de valider l'algorithme, une image de petite taille en niveau de gris synth
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.2\textwidth]{Chapters/Images/nystrom_synthetic}
-\caption{Synthetic $10\times 10$ grey scale image}
+\caption{Image synthétique en niveau de gris de taille $10\times 10$}
 \label{nystrom_synth}
 \end{figure}
 
@@ -32,7 +32,7 @@ Le but de la validation est de comparer la véritable matrice de similarité W a
 
 
 \subsection{Tests de stabilisation tonale}
-Les séquences vidéos présentées dans l'article \cite{farbman2011tonal} sont disponible en téléchargement. Ces données ont donc été utilisées afin de réaliser nos tests.\\
+Les séquences vidéos présentées dans l'article \cite{farbman2011tonal} sont disponible en téléchargement. Ces données ont donc été utilisées afin de réaliser les tests.\\
 
 Tout d'abord, la séquence initiale \textit{graycard.avi} a été alignée afin de conserver une tonalité froide (figure \ref{fig_gray}), puis sur une tonalité chaude.
 
@@ -85,7 +85,7 @@ On peut cependant se poser la question de l'impact de l'algorithme de stabilisat
 \end{figure}
 
 
-On peut tout d'abord noter que la séquence a été stabilisée alors qu'aucune correction n'avait été apporté par l'appareil. D'autre part, on note la présence d'artéfacts sur l'image. Ces artéfacts ont plusieurs origines. Tout d'abord, les images ont été sous-échantillonnés et le nombre de pixels est donc très bas. D'autre part, dans des conditions de très basse lumière comme celle-ci, les images ne sont pas nettes.\\
+On peut tout d'abord noter que la séquence a été stabilisée alors qu'aucune correction n'avait été apporté par l'appareil. D'autre part, on note la présence d'artéfacts sur l'image. Ces artéfacts ont plusieurs origines. Tout d'abord, les images ont été sous-échantillonnés pour le calcul des cartes d'ajustements et le nombre de pixels est donc très bas. D'autre part, dans des conditions de très basse lumière comme celle-ci, les images ne sont pas nettes.\\
 
 Enfin, un test a été réalisé afin d'observer le comportement de l'algorithme en regard de la cohérence temporelle de la séquence d'image. Afin de réalisée ce test, deux bout de séquences ont été concaténées afin de créer une coupure artificielle de la vidéo. On peut remarquer sur l'image \ref{fig_coherence} que la perte de cohérence temporelle influe énormément sur le résultat de l'algorithme.
 
