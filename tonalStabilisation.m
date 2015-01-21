@@ -1,6 +1,6 @@
 clear;
 clc;
-movieTitle = 'data/entrance.avi';
+movieTitle = 'data/greycard.avi';
 disp(['Starting algorithm, loading movie ' movieTitle]);
 mov = VideoReader(movieTitle);
 vidFrames = read(mov);
@@ -8,12 +8,21 @@ nbFrames = get(mov,'NumberOfFrames');
 disp('Done.');
 width = get(mov,'Width');
 height = get(mov,'Height');
-%%
 
 
 %%
 
-anchor = [73];
+vidFramesp = uint8(zeros(height,width,3,200));
+%%
+vidFramesp(:,:,:,1:100) = vidFrames(:,:,:,1:100);
+vidFramesp(:,:,:,101:200) = vidFrames(:,:,:,501:600);
+nbFrames = 200;
+vidFrames = vidFramesp;
+
+
+%%
+
+anchor = [20];
 
 
 clear A;
@@ -28,6 +37,7 @@ for anchorIndex = anchor
     frame = double(vidFrames(:,:,:,anchorIndex));
     n = 0;
     for i = anchorIndex+1:nbFrames
+        i
         tic
         frame2 = double(vidFrames(:,:,:,i));
         frame = frame./max(frame(:));
@@ -37,11 +47,13 @@ for anchorIndex = anchor
         n = n+1;
         disp(100*n/nbFrames);
         toc
+        
     end
     
     n = nbFrames-anchorIndex;
     frame = double(vidFrames(:,:,:,anchorIndex));
     for i = anchorIndex-1:-1:1
+        i
         tic
         frame2 = double(vidFrames(:,:,:,i));
         frame = frame./max(frame(:));
@@ -51,6 +63,7 @@ for anchorIndex = anchor
         n=n+1;
         disp(100*n/nbFrames);
         toc
+        
     end
     
     
